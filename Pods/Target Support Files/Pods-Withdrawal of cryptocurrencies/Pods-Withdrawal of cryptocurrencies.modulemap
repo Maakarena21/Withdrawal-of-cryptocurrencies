@@ -1,0 +1,6 @@
+module Pods_Withdrawal_of_cryptocurrencies {
+  umbrella header "Pods-Withdrawal of cryptocurrencies-umbrella.h"
+
+  export *
+  module * { export * }
+}

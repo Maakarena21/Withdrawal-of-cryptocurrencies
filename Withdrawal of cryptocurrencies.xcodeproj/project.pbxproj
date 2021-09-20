@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8181DC74E8B13D939A22066B /* libPods-Withdrawal of cryptocurrencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A558D124C5820ADB71D6ED17 /* libPods-Withdrawal of cryptocurrencies.a */; };
+		D19FF2D126F747E0000DE63E /* CryptoCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */; };
+		D1F17D0B26F688D50000811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D0A26F688D50000811E /* AppDelegate.swift */; };
+		D1F17D0D26F688D50000811E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D0C26F688D50000811E /* SceneDelegate.swift */; };
+		D1F17D1426F688D80000811E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F17D1326F688D80000811E /* Assets.xcassets */; };
+		D1F17D1726F688D80000811E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F17D1526F688D80000811E /* LaunchScreen.storyboard */; };
+		D1F17D2326F68A950000811E /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2226F68A950000811E /* CryptoModel.swift */; };
+		D1F17D2626F68AE40000811E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2526F68AE40000811E /* Network.swift */; };
+		D1F17D2926F68BA70000811E /* RootModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2826F68BA70000811E /* RootModuleAssembly.swift */; };
+		D1F17D2C26F695330000811E /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2B26F695330000811E /* CryptoViewController.swift */; };
+		D1F17D2E26F695780000811E /* CryptoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2D26F695780000811E /* CryptoPresenter.swift */; };
+		D1F17D3026F695CC0000811E /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D2F26F695CC0000811E /* NetworkAssembly.swift */; };
+		D1F17D3226F6992D0000811E /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D3126F6992D0000811E /* CryptoCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29EB81EC36CD00392FEC2B0F /* Pods-Withdrawal of cryptocurrencies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Withdrawal of cryptocurrencies.release.xcconfig"; path = "Target Support Files/Pods-Withdrawal of cryptocurrencies/Pods-Withdrawal of cryptocurrencies.release.xcconfig"; sourceTree = "<group>"; };
+		8A8EC6531035F389FF93E188 /* Pods-Withdrawal of cryptocurrencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Withdrawal of cryptocurrencies.debug.xcconfig"; path = "Target Support Files/Pods-Withdrawal of cryptocurrencies/Pods-Withdrawal of cryptocurrencies.debug.xcconfig"; sourceTree = "<group>"; };
+		A558D124C5820ADB71D6ED17 /* libPods-Withdrawal of cryptocurrencies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Withdrawal of cryptocurrencies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyService.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Services/CryptoCurrencyService.swift"; sourceTree = "<group>"; };
+		D1F17D0726F688D50000811E /* Withdrawal of cryptocurrencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Withdrawal of cryptocurrencies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F17D0A26F688D50000811E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F17D0C26F688D50000811E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D1F17D1326F688D80000811E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F17D1626F688D80000811E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1F17D1826F688D80000811E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F17D2226F68A950000811E /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		D1F17D2526F68AE40000811E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D1F17D2826F68BA70000811E /* RootModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModuleAssembly.swift; sourceTree = "<group>"; };
+		D1F17D2B26F695330000811E /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		D1F17D2D26F695780000811E /* CryptoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPresenter.swift; sourceTree = "<group>"; };
+		D1F17D2F26F695CC0000811E /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		D1F17D3126F6992D0000811E /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F17D0426F688D50000811E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8181DC74E8B13D939A22066B /* libPods-Withdrawal of cryptocurrencies.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE2227BC0DCBAB3CF311A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A8EC6531035F389FF93E188 /* Pods-Withdrawal of cryptocurrencies.debug.xcconfig */,
+				29EB81EC36CD00392FEC2B0F /* Pods-Withdrawal of cryptocurrencies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D19FF2CF26F747C8000DE63E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D1F17CFE26F688D50000811E = {
+			isa = PBXGroup;
+			children = (
+				D1F17D0926F688D50000811E /* Withdrawal of cryptocurrencies */,
+				D1F17D0826F688D50000811E /* Products */,
+				2BE2227BC0DCBAB3CF311A73 /* Pods */,
+				DA5E559B7F8501C818A37567 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F17D0826F688D50000811E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D0726F688D50000811E /* Withdrawal of cryptocurrencies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F17D0926F688D50000811E /* Withdrawal of cryptocurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				D19FF2CF26F747C8000DE63E /* Services */,
+				D1F17D2A26F694DC0000811E /* СryptoViewModule */,
+				D1F17D2726F68B950000811E /* RootModule */,
+				D1F17D2426F68ACD0000811E /* NetworkModule */,
+				D1F17D2126F68A7C0000811E /* CryptoModel */,
+				D1F17D2026F6892D0000811E /* Views */,
+				D1F17D1F26F6890D0000811E /* Application */,
+				D1F17D1E26F688E00000811E /* Resources */,
+			);
+			path = "Withdrawal of cryptocurrencies";
+			sourceTree = "<group>";
+		};
+		D1F17D1E26F688E00000811E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D1326F688D80000811E /* Assets.xcassets */,
+				D1F17D1526F688D80000811E /* LaunchScreen.storyboard */,
+				D1F17D1826F688D80000811E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D1F17D1F26F6890D0000811E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D0A26F688D50000811E /* AppDelegate.swift */,
+				D1F17D0C26F688D50000811E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D1F17D2026F6892D0000811E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D3126F6992D0000811E /* CryptoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1F17D2126F68A7C0000811E /* CryptoModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D2226F68A950000811E /* CryptoModel.swift */,
+			);
+			path = CryptoModel;
+			sourceTree = "<group>";
+		};
+		D1F17D2426F68ACD0000811E /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D2526F68AE40000811E /* Network.swift */,
+				D1F17D2F26F695CC0000811E /* NetworkAssembly.swift */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		D1F17D2726F68B950000811E /* RootModule */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D2826F68BA70000811E /* RootModuleAssembly.swift */,
+			);
+			path = RootModule;
+			sourceTree = "<group>";
+		};
+		D1F17D2A26F694DC0000811E /* СryptoViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				D1F17D2B26F695330000811E /* CryptoViewController.swift */,
+				D1F17D2D26F695780000811E /* CryptoPresenter.swift */,
+			);
+			path = "СryptoViewModule";
+			sourceTree = "<group>";
+		};
+		DA5E559B7F8501C818A37567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A558D124C5820ADB71D6ED17 /* libPods-Withdrawal of cryptocurrencies.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F17D0626F688D50000811E /* Withdrawal of cryptocurrencies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F17D1B26F688D80000811E /* Build configuration list for PBXNativeTarget "Withdrawal of cryptocurrencies" */;
+			buildPhases = (
+				C0E706C86C4615275C13DD43 /* [CP] Check Pods Manifest.lock */,
+				D1F17D0326F688D50000811E /* Sources */,
+				D1F17D0426F688D50000811E /* Frameworks */,
+				D1F17D0526F688D50000811E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Withdrawal of cryptocurrencies";
+			productName = "Withdrawal of cryptocurrencies";
+			productReference = D1F17D0726F688D50000811E /* Withdrawal of cryptocurrencies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F17CFF26F688D50000811E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D1F17D0626F688D50000811E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D1F17D0226F688D50000811E /* Build configuration list for PBXProject "Withdrawal of cryptocurrencies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F17CFE26F688D50000811E;
+			productRefGroup = D1F17D0826F688D50000811E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F17D0626F688D50000811E /* Withdrawal of cryptocurrencies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F17D0526F688D50000811E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F17D1726F688D80000811E /* LaunchScreen.storyboard in Resources */,
+				D1F17D1426F688D80000811E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0E706C86C4615275C13DD43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Withdrawal of cryptocurrencies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F17D0326F688D50000811E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F17D2626F68AE40000811E /* Network.swift in Sources */,
+				D19FF2D126F747E0000DE63E /* CryptoCurrencyService.swift in Sources */,
+				D1F17D2E26F695780000811E /* CryptoPresenter.swift in Sources */,
+				D1F17D3226F6992D0000811E /* CryptoCell.swift in Sources */,
+				D1F17D3026F695CC0000811E /* NetworkAssembly.swift in Sources */,
+				D1F17D0B26F688D50000811E /* AppDelegate.swift in Sources */,
+				D1F17D2C26F695330000811E /* CryptoViewController.swift in Sources */,
+				D1F17D2926F68BA70000811E /* RootModuleAssembly.swift in Sources */,
+				D1F17D2326F68A950000811E /* CryptoModel.swift in Sources */,
+				D1F17D0D26F688D50000811E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1F17D1526F688D80000811E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F17D1626F688D80000811E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1F17D1926F688D80000811E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1F17D1A26F688D80000811E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F17D1C26F688D80000811E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8EC6531035F389FF93E188 /* Pods-Withdrawal of cryptocurrencies.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M99XNDBHY;
+				INFOPLIST_FILE = "Withdrawal of cryptocurrencies/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IB.Withdrawal-of-cryptocurrencies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1F17D1D26F688D80000811E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29EB81EC36CD00392FEC2B0F /* Pods-Withdrawal of cryptocurrencies.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M99XNDBHY;
+				INFOPLIST_FILE = "Withdrawal of cryptocurrencies/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IB.Withdrawal-of-cryptocurrencies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F17D0226F688D50000811E /* Build configuration list for PBXProject "Withdrawal of cryptocurrencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F17D1926F688D80000811E /* Debug */,
+				D1F17D1A26F688D80000811E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F17D1B26F688D80000811E /* Build configuration list for PBXNativeTarget "Withdrawal of cryptocurrencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F17D1C26F688D80000811E /* Debug */,
+				D1F17D1D26F688D80000811E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F17CFF26F688D50000811E /* Project object */;
+}
