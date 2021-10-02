@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8181DC74E8B13D939A22066B /* libPods-Withdrawal of cryptocurrencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A558D124C5820ADB71D6ED17 /* libPods-Withdrawal of cryptocurrencies.a */; };
+		D130DC7D26FA6FDE00453394 /* СryptoCurrencyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130DC7C26FA6FDE00453394 /* СryptoCurrencyAssembly.swift */; };
+		D150AE0126FBDB0D00394F31 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0026FBDB0D00394F31 /* DetailCell.swift */; };
+		D150AE0427065AF900394F31 /* DetailCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0327065AF900394F31 /* DetailCryptoViewController.swift */; };
+		D150AE0827065B5400394F31 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0727065B5400394F31 /* Router.swift */; };
+		D150AE0A27065B6200394F31 /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0927065B6200394F31 /* RouterAssembly.swift */; };
+		D150AE0C2706600100394F31 /* DetailCryptoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0B2706600100394F31 /* DetailCryptoAssembly.swift */; };
+		D150AE0E2706646B00394F31 /* DetailCryptoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150AE0D2706646B00394F31 /* DetailCryptoPresenter.swift */; };
 		D19FF2D126F747E0000DE63E /* CryptoCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */; };
 		D1F17D0B26F688D50000811E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D0A26F688D50000811E /* AppDelegate.swift */; };
 		D1F17D0D26F688D50000811E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F17D0C26F688D50000811E /* SceneDelegate.swift */; };
@@ -26,6 +33,13 @@
 		29EB81EC36CD00392FEC2B0F /* Pods-Withdrawal of cryptocurrencies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Withdrawal of cryptocurrencies.release.xcconfig"; path = "Target Support Files/Pods-Withdrawal of cryptocurrencies/Pods-Withdrawal of cryptocurrencies.release.xcconfig"; sourceTree = "<group>"; };
 		8A8EC6531035F389FF93E188 /* Pods-Withdrawal of cryptocurrencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Withdrawal of cryptocurrencies.debug.xcconfig"; path = "Target Support Files/Pods-Withdrawal of cryptocurrencies/Pods-Withdrawal of cryptocurrencies.debug.xcconfig"; sourceTree = "<group>"; };
 		A558D124C5820ADB71D6ED17 /* libPods-Withdrawal of cryptocurrencies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Withdrawal of cryptocurrencies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D130DC7C26FA6FDE00453394 /* СryptoCurrencyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "СryptoCurrencyAssembly.swift"; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Services/СryptoCurrencyAssembly.swift"; sourceTree = "<group>"; };
+		D150AE0026FBDB0D00394F31 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCell.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Views/DetailCell.swift"; sourceTree = "<group>"; };
+		D150AE0327065AF900394F31 /* DetailCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCryptoViewController.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/DetailViewController/DetailCryptoViewController.swift"; sourceTree = "<group>"; };
+		D150AE0727065B5400394F31 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Router.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Router/Router.swift"; sourceTree = "<group>"; };
+		D150AE0927065B6200394F31 /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RouterAssembly.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Router/RouterAssembly.swift"; sourceTree = "<group>"; };
+		D150AE0B2706600100394F31 /* DetailCryptoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCryptoAssembly.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/DetailViewController/DetailCryptoAssembly.swift"; sourceTree = "<group>"; };
+		D150AE0D2706646B00394F31 /* DetailCryptoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCryptoPresenter.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/DetailViewController/DetailCryptoPresenter.swift"; sourceTree = "<group>"; };
 		D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyService.swift; path = "../../../../../../../ilushaabelkin/Desktop/Академия Swift/Cryptocurrencies/Withdrawal of cryptocurrencies/Withdrawal of cryptocurrencies/Services/CryptoCurrencyService.swift"; sourceTree = "<group>"; };
 		D1F17D0726F688D50000811E /* Withdrawal of cryptocurrencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Withdrawal of cryptocurrencies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F17D0A26F688D50000811E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +77,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D150AE0227065AD700394F31 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D150AE0327065AF900394F31 /* DetailCryptoViewController.swift */,
+				D150AE0D2706646B00394F31 /* DetailCryptoPresenter.swift */,
+				D150AE0B2706600100394F31 /* DetailCryptoAssembly.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		D150AE0527065B3A00394F31 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D150AE0727065B5400394F31 /* Router.swift */,
+				D150AE0927065B6200394F31 /* RouterAssembly.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		D19FF2CF26F747C8000DE63E /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				D19FF2D026F747E0000DE63E /* CryptoCurrencyService.swift */,
+				D130DC7C26FA6FDE00453394 /* СryptoCurrencyAssembly.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -92,6 +126,8 @@
 		D1F17D0926F688D50000811E /* Withdrawal of cryptocurrencies */ = {
 			isa = PBXGroup;
 			children = (
+				D150AE0527065B3A00394F31 /* Router */,
+				D150AE0227065AD700394F31 /* DetailViewController */,
 				D19FF2CF26F747C8000DE63E /* Services */,
 				D1F17D2A26F694DC0000811E /* СryptoViewModule */,
 				D1F17D2726F68B950000811E /* RootModule */,
@@ -127,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				D1F17D3126F6992D0000811E /* CryptoCell.swift */,
+				D150AE0026FBDB0D00394F31 /* DetailCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,15 +305,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D150AE0427065AF900394F31 /* DetailCryptoViewController.swift in Sources */,
 				D1F17D2626F68AE40000811E /* Network.swift in Sources */,
 				D19FF2D126F747E0000DE63E /* CryptoCurrencyService.swift in Sources */,
+				D150AE0126FBDB0D00394F31 /* DetailCell.swift in Sources */,
+				D150AE0E2706646B00394F31 /* DetailCryptoPresenter.swift in Sources */,
 				D1F17D2E26F695780000811E /* CryptoPresenter.swift in Sources */,
+				D130DC7D26FA6FDE00453394 /* СryptoCurrencyAssembly.swift in Sources */,
 				D1F17D3226F6992D0000811E /* CryptoCell.swift in Sources */,
 				D1F17D3026F695CC0000811E /* NetworkAssembly.swift in Sources */,
 				D1F17D0B26F688D50000811E /* AppDelegate.swift in Sources */,
+				D150AE0C2706600100394F31 /* DetailCryptoAssembly.swift in Sources */,
 				D1F17D2C26F695330000811E /* CryptoViewController.swift in Sources */,
+				D150AE0827065B5400394F31 /* Router.swift in Sources */,
 				D1F17D2926F68BA70000811E /* RootModuleAssembly.swift in Sources */,
 				D1F17D2326F68A950000811E /* CryptoModel.swift in Sources */,
+				D150AE0A27065B6200394F31 /* RouterAssembly.swift in Sources */,
 				D1F17D0D26F688D50000811E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

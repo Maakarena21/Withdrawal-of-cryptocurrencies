@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - HTTPS3CommasIoRuCoinMarketCapCryptocurrenciesConvertUsdCryptocurrencyTypeAllPage1SearchTypeLOADCRYPTOCURRENCIES
+// MARK: - CryptoResponse
 struct CryptoResponse: Codable {
     let cryptocurrencies: [Cryptocurrency]
     let total: Int
@@ -15,7 +15,7 @@ struct CryptoResponse: Codable {
 
 // MARK: - Cryptocurrency
 struct Cryptocurrency: Codable {
-    let logoURL, name, symbol, slug: String
+    var logoURL, name, symbol, slug: String
     let price: Double
     let formattedPrice, change, marketCap, volume: String
     let circulatingSupply, issueDate: String
