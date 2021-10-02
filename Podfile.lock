@@ -1,16 +1,20 @@
 PODS:
   - EasyDi (1.6.1)
+  - Kingfisher (7.0.0)
 
 DEPENDENCIES:
   - EasyDi
+  - Kingfisher
 
 SPEC REPOS:
   trunk:
     - EasyDi
+    - Kingfisher
 
 SPEC CHECKSUMS:
   EasyDi: 3d7d4c0d3ad2d78b3ff22d4755590d32945f69cc
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
 
-PODFILE CHECKSUM: 5ae4edcdfe1abf732ff16c99d613cbe79d004c0c
+PODFILE CHECKSUM: b1793fbf0918eed6e3f800edee84b6da55d55c88
 
 COCOAPODS: 1.10.1
