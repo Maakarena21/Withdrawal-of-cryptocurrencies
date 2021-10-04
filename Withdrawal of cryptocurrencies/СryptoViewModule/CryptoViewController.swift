@@ -7,10 +7,10 @@
 
 import UIKit
 import Kingfisher
+import Combine
 
-
-struct СurrencyInfo {
-    var cryptocurrencies: [Cryptocurrency]
+struct СurrencyInfo: Equatable {
+    var cryptocurrencies: [CellState]
 }
 
 protocol CurrencyView: AnyObject {
@@ -19,23 +19,26 @@ protocol CurrencyView: AnyObject {
 
 class CryptoViewController: UIViewController {
 
-    var currencyInfo: СurrencyInfo? {
-        didSet {
-            CryptoTableView.reloadData()
-        }
-    }
-
+    @Published var currencyInfo: СurrencyInfo?
+    var token: AnyCancellable?
+    
     var presenter: CryptoPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CryptoTableView.delegate = self
-        CryptoTableView.dataSource = self
+        cryptoTableView.delegate = self
+        cryptoTableView.dataSource = self
         presenter.viewLoaded()
         configurate()
+        
+        token = $currencyInfo.receive(on: DispatchQueue.main).sink(receiveValue: {_ in
+            self.cryptoTableView.reloadData()
+        })
+        
+        
     }
     
-    private lazy var CryptoTableView: UITableView = {
+    private lazy var cryptoTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(CryptoCell.self, forCellReuseIdentifier: CryptoCell.id)
@@ -47,14 +50,14 @@ class CryptoViewController: UIViewController {
     
     private func configurate() {
         
-        view.addSubview(CryptoTableView)
+        view.addSubview(cryptoTableView)
         
                 NSLayoutConstraint.activate([
                     
-                    CryptoTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-                    CryptoTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-                    CryptoTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-                    CryptoTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
+                    cryptoTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+                    cryptoTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+                    cryptoTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+                    cryptoTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
                     
                     
                     
@@ -73,13 +76,9 @@ extension CryptoViewController: UITableViewDelegate, UITableViewDataSource {
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: CryptoCell.id, for: indexPath) as! CryptoCell
         
+        guard let model = currencyInfo?.cryptocurrencies[indexPath.row] else {return cell}
         
-        let url = URL(string: "https://3commas.io/ru\(currencyInfo?.cryptocurrencies[indexPath.row].logoURL ?? "")")
-        cell.images.kf.setImage(with: url)
-        
-
-        cell.nameLabel.text = currencyInfo?.cryptocurrencies[indexPath.row].name
-        cell.symbolLabel.text = currencyInfo?.cryptocurrencies[indexPath.row].symbol
+        cell.state = model
         
         return cell
     }
@@ -89,27 +88,6 @@ extension CryptoViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
-    
-//    private func animateTableView() {
-//
-//        let cells = CryptoTableView.visibleCells
-//        let tableViewHeight = CryptoTableView.bounds.height
-//        var delay: Double = 0
-//
-//        for cell in cells {
-//            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
-//
-//            UIView.animate(withDuration:
-//                            1.5,
-//                           delay: delay * 0.05,
-//                           usingSpringWithDamping: 0.0,
-//                           initialSpringVelocity: 0,
-//                           options: .curveEaseInOut,
-//                           animations: {
-//                            cell.transform = CGAffineTransform.identity
-//                           })
-//        }
-//    }
 }
 
 extension CryptoViewController: CurrencyView {
