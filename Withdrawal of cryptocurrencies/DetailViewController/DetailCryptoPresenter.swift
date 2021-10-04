@@ -10,7 +10,7 @@ class DetailCryptoPresenterImpl: DetailCryptoPresenter {
     var currency: Cryptocurrency!
     
     func viewLoaded() {
-        view?.display(cryptoName: currency.name)
+        view?.display(cryptoName: currency.name, price: String(currency.price))
     }
     
 }

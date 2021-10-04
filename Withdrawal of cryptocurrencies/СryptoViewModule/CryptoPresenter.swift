@@ -20,6 +20,7 @@ class CryptoPresenterImpl: CryptoPresenter {
     var service: CryptoCurrencyService!
     var cancellable: AnyCancellable?
     var router: Router!
+    var currenciesState = [Cryptocurrency]()
     weak var view: CurrencyView?
     
     
@@ -27,24 +28,27 @@ class CryptoPresenterImpl: CryptoPresenter {
         func scrollEnd() {
            cancellable = service.get(loadedCount: view?.currencyInfo?.cryptocurrencies.count ?? 0)
                .receive(on: DispatchQueue.main)
-               .sink(receiveCompletion: {_ in}) { [weak self] in
-                   self?.view?.currencyInfo?.cryptocurrencies.append(contentsOf: $0.cryptocurrencies)
+               .sink(receiveCompletion: {_ in}) {
+                self.view?.currencyInfo?.cryptocurrencies.append(contentsOf: self.map($0.cryptocurrencies))
+                self.currenciesState.append(contentsOf: $0.cryptocurrencies)
            }
        }
     
     func viewLoaded() {
         cancellable = service.get(loadedCount: 99)
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: {_ in}) { [weak self] in
-                self?.view?.currencyInfo = СurrencyInfo(cryptocurrencies: $0.cryptocurrencies)
-
+            .sink(receiveCompletion: {_ in}) {
+                self.view?.currencyInfo = СurrencyInfo(cryptocurrencies: self.map($0.cryptocurrencies))
+                self.currenciesState = $0.cryptocurrencies
             }
     }
     
     func cellTapped(indexPath: IndexPath) {
-        guard let cryptoCurrency = view?.currencyInfo?.cryptocurrencies[indexPath.row] else {return}
-        print(cryptoCurrency)
-        router.cryptoDetails(currency: cryptoCurrency)
+        router.cryptoDetails(currency: currenciesState[indexPath.row])
+    }
+    
+    func map(_ cryptocurrencies: [Cryptocurrency]) -> [CellState] {
+        cryptocurrencies.map{CellState(image: URL(string: "https://3commas.io/ru\($0.logoURL)"), name: $0.name, symbol: $0.symbol)}
     }
 }
 

@@ -1,13 +1,20 @@
-//
-//  CryptoCell.swift
-//  Withdrawal of cryptocurrencies
-//
-//  Created by Silence on 19.09.2021.
-//
+
 
 import UIKit
+import Combine
+import Kingfisher
+
+
+struct CellState: Equatable {
+    let image: URL?
+    let name: String
+    let symbol: String
+}
 
 class CryptoCell: UITableViewCell {
+    @Published var state: CellState?
+    var token: AnyCancellable?
+    
     
    static let id = "cell_id"
     
@@ -65,7 +72,12 @@ class CryptoCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
            super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
+        token = $state.compactMap{$0}
+            .removeDuplicates().sink(receiveValue: {
+            self.nameLabel.text = $0.name
+            self.symbolLabel.text = $0.symbol
+            self.images.kf.setImage(with: $0.image)
+    })
            backgroundColor = .white
            selectedBackgroundView = selectedView
             configurateElements()
